@@ -18,27 +18,80 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <segue destination="gTs-vR-Yqu" kind="custom" identifier="SW_rear" customClass="SWRevealViewControllerSegueSetController" id="LgB-gV-VEH"/>
+                        <segue destination="gTs-vR-Yqu" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="LgB-gV-VEH"/>
+                        <segue destination="JBa-bQ-tyH" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="4Dd-W6-UFG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-903" y="-13"/>
+            <point key="canvasLocation" x="-1025" y="327"/>
         </scene>
         <!--ChannalVC-->
         <scene sceneID="gMn-Lk-Izp">
             <objects>
                 <viewController id="gTs-vR-Yqu" customClass="channalVC" customModule="Smack" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="0vP-0t-43l">
+                    <view key="view" contentMode="scaleToFill" id="0vP-0t-43l" customClass="GradientView" customModule="Smack" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smack" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kyb-MI-YiG">
+                                <rect key="frame" x="20" y="68" width="63" height="23"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                <color key="textColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Channals" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LOz-2f-ffA">
+                                <rect key="frame" x="20" y="111" width="72" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1JY-mc-0jT">
+                                <rect key="frame" x="312" y="110" width="22" height="22"/>
+                                <state key="normal" image="addChannelButton"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="aYf-cc-mkW">
+                                <rect key="frame" x="20" y="787" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="8rs-xz-R1F"/>
+                                    <constraint firstAttribute="width" constant="75" id="9pv-oQ-Fah"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bGI-N6-kbK">
+                                <rect key="frame" x="0.0" y="152" width="414" height="615"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sDf-py-ymC">
+                                <rect key="frame" x="125" y="808" width="46" height="33"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="sDf-py-ymC" firstAttribute="leading" secondItem="aYf-cc-mkW" secondAttribute="trailing" constant="30" id="BWh-Im-se4"/>
+                            <constraint firstItem="bGI-N6-kbK" firstAttribute="leading" secondItem="MVg-T9-efE" secondAttribute="leading" id="Ba0-fd-UJ4"/>
+                            <constraint firstItem="aYf-cc-mkW" firstAttribute="bottom" secondItem="MVg-T9-efE" secondAttribute="bottom" id="FiB-Rh-DIC"/>
+                            <constraint firstItem="1JY-mc-0jT" firstAttribute="centerY" secondItem="LOz-2f-ffA" secondAttribute="centerY" id="Iz6-Y5-kLm"/>
+                            <constraint firstItem="LOz-2f-ffA" firstAttribute="leading" secondItem="MVg-T9-efE" secondAttribute="leading" constant="20" id="JPL-zo-5D2"/>
+                            <constraint firstItem="Kyb-MI-YiG" firstAttribute="top" secondItem="MVg-T9-efE" secondAttribute="top" constant="24" id="N6K-pO-9eM"/>
+                            <constraint firstItem="bGI-N6-kbK" firstAttribute="trailing" secondItem="MVg-T9-efE" secondAttribute="trailing" id="Zb7-Io-1kx"/>
+                            <constraint firstItem="Kyb-MI-YiG" firstAttribute="leading" secondItem="MVg-T9-efE" secondAttribute="leading" constant="20" id="dYT-5W-uhO"/>
+                            <constraint firstItem="aYf-cc-mkW" firstAttribute="top" secondItem="bGI-N6-kbK" secondAttribute="bottom" constant="20" id="dyf-V5-L1w"/>
+                            <constraint firstItem="MVg-T9-efE" firstAttribute="trailing" secondItem="1JY-mc-0jT" secondAttribute="trailing" constant="80" id="h39-gS-VO6"/>
+                            <constraint firstItem="sDf-py-ymC" firstAttribute="centerY" secondItem="aYf-cc-mkW" secondAttribute="centerY" id="mAC-0y-k2Z"/>
+                            <constraint firstItem="bGI-N6-kbK" firstAttribute="top" secondItem="1JY-mc-0jT" secondAttribute="bottom" constant="20" id="o2R-Va-rBO"/>
+                            <constraint firstItem="aYf-cc-mkW" firstAttribute="leading" secondItem="MVg-T9-efE" secondAttribute="leading" constant="20" id="ppV-0j-ttb"/>
+                            <constraint firstItem="LOz-2f-ffA" firstAttribute="top" secondItem="Kyb-MI-YiG" secondAttribute="bottom" constant="20" id="uhV-Da-YyE"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="MVg-T9-efE"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TWf-ed-3tb" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-106" y="-114"/>
+            <point key="canvasLocation" x="-107.24637681159422" y="-114.50892857142857"/>
         </scene>
         <!--ChatVC-->
         <scene sceneID="g20-02-yU4">
@@ -85,7 +138,7 @@
                         <viewLayoutGuide key="safeArea" id="1CM-27-GSz"/>
                     </view>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="custom" identifier="SW_front" customClass="SWRevealViewControllerSegueSetController" id="JDU-v1-p0f"/>
+                        <outlet property="menubtn" destination="qFI-im-DoO" id="hV0-xB-9xe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mb9-Qw-xV4" sceneMemberID="firstResponder"/>
@@ -94,6 +147,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="addChannelButton" width="22" height="22"/>
+        <image name="menuProfileIcon" width="99" height="99"/>
         <image name="smackBurger" width="40" height="40"/>
     </resources>
 </document>
