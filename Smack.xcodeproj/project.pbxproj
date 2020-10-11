@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		717EB20625AF020767DC7D48 /* Pods_SmackTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35DAE78BE35304E4C0F82FA8 /* Pods_SmackTests.framework */; };
 		72DDE34FEEA1B30B93DF89D7 /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9339A0F85FF855FB25168FB /* Pods_Smack.framework */; };
+		8403A07F2533468200457C1B /* [Arabic Sub] Anathema -Lost control مترجمة .mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8403A07E2533468200457C1B /* [Arabic Sub] Anathema -Lost control مترجمة .mp3 */; };
+		8403A08125335C1100457C1B /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8403A08025335C1100457C1B /* LoginVC.swift */; };
 		841CF1BB252B359E0036E172 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841CF1BA252B359E0036E172 /* AppDelegate.swift */; };
 		841CF1BD252B359E0036E172 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841CF1BC252B359E0036E172 /* SceneDelegate.swift */; };
 		841CF1C2252B359E0036E172 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841CF1C0252B359E0036E172 /* Main.storyboard */; };
@@ -17,8 +19,8 @@
 		841CF1D2252B35A30036E172 /* SmackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841CF1D1252B35A30036E172 /* SmackTests.swift */; };
 		841CF1DD252B35A30036E172 /* SmackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841CF1DC252B35A30036E172 /* SmackUITests.swift */; };
 		843A7391252D252A000C0D20 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843A7390252D2529000C0D20 /* SWRevealViewController.m */; };
-		843A739A252D33FA000C0D20 /* chatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843A7399252D33FA000C0D20 /* chatVC.swift */; };
-		843A739C252D3411000C0D20 /* channalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843A739B252D3411000C0D20 /* channalVC.swift */; };
+		843A739A252D33FA000C0D20 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843A7399252D33FA000C0D20 /* ChatVC.swift */; };
+		843A739C252D3411000C0D20 /* ChannalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843A739B252D3411000C0D20 /* ChannalVC.swift */; };
 		84A9F8582531EF9600B84099 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A9F8572531EF9600B84099 /* GradientView.swift */; };
 		F6BA4563BA5AFA88DEEDCF12 /* Pods_Smack_SmackUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F22CAF1E18D01EEB9E1B3C2 /* Pods_Smack_SmackUITests.framework */; };
 /* End PBXBuildFile section */
@@ -47,6 +49,8 @@
 		369316546085088946099B1C /* Pods-SmackTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmackTests.debug.xcconfig"; path = "Target Support Files/Pods-SmackTests/Pods-SmackTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3AFCFB330D5D90BB135016DB /* Pods-Smack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.debug.xcconfig"; path = "Target Support Files/Pods-Smack/Pods-Smack.debug.xcconfig"; sourceTree = "<group>"; };
 		6F22CAF1E18D01EEB9E1B3C2 /* Pods_Smack_SmackUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smack_SmackUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8403A07E2533468200457C1B /* [Arabic Sub] Anathema -Lost control مترجمة .mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "[Arabic Sub] Anathema -Lost control مترجمة .mp3"; sourceTree = "<group>"; };
+		8403A08025335C1100457C1B /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		841CF1B7252B359E0036E172 /* Smack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		841CF1BA252B359E0036E172 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		841CF1BC252B359E0036E172 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,8 +67,8 @@
 		843A738E252D2529000C0D20 /* Smack-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Smack-Bridging-Header.h"; sourceTree = "<group>"; };
 		843A738F252D2529000C0D20 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		843A7390252D2529000C0D20 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
-		843A7399252D33FA000C0D20 /* chatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatVC.swift; sourceTree = "<group>"; };
-		843A739B252D3411000C0D20 /* channalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = channalVC.swift; sourceTree = "<group>"; };
+		843A7399252D33FA000C0D20 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		843A739B252D3411000C0D20 /* ChannalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannalVC.swift; sourceTree = "<group>"; };
 		84A9F8572531EF9600B84099 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		A9339A0F85FF855FB25168FB /* Pods_Smack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B47889D3B5F53971746A2C77 /* Pods-SmackTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmackTests.release.xcconfig"; path = "Target Support Files/Pods-SmackTests/Pods-SmackTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -141,6 +145,7 @@
 				841CF1BA252B359E0036E172 /* AppDelegate.swift */,
 				841CF1BC252B359E0036E172 /* SceneDelegate.swift */,
 				841CF1C0252B359E0036E172 /* Main.storyboard */,
+				8403A07E2533468200457C1B /* [Arabic Sub] Anathema -Lost control مترجمة .mp3 */,
 				841CF1C3252B35A20036E172 /* Assets.xcassets */,
 				841CF1C5252B35A20036E172 /* LaunchScreen.storyboard */,
 				841CF1C8252B35A20036E172 /* Info.plist */,
@@ -194,8 +199,9 @@
 		843A7398252D33CD000C0D20 /* controller */ = {
 			isa = PBXGroup;
 			children = (
-				843A7399252D33FA000C0D20 /* chatVC.swift */,
-				843A739B252D3411000C0D20 /* channalVC.swift */,
+				843A7399252D33FA000C0D20 /* ChatVC.swift */,
+				843A739B252D3411000C0D20 /* ChannalVC.swift */,
+				8403A08025335C1100457C1B /* LoginVC.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -325,6 +331,7 @@
 			files = (
 				841CF1C7252B35A20036E172 /* LaunchScreen.storyboard in Resources */,
 				841CF1C4252B35A20036E172 /* Assets.xcassets in Resources */,
+				8403A07F2533468200457C1B /* [Arabic Sub] Anathema -Lost control مترجمة .mp3 in Resources */,
 				841CF1C2252B359E0036E172 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -453,11 +460,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				843A739A252D33FA000C0D20 /* chatVC.swift in Sources */,
+				843A739A252D33FA000C0D20 /* ChatVC.swift in Sources */,
 				841CF1BB252B359E0036E172 /* AppDelegate.swift in Sources */,
+				8403A08125335C1100457C1B /* LoginVC.swift in Sources */,
 				84A9F8582531EF9600B84099 /* GradientView.swift in Sources */,
 				841CF1BD252B359E0036E172 /* SceneDelegate.swift in Sources */,
-				843A739C252D3411000C0D20 /* channalVC.swift in Sources */,
+				843A739C252D3411000C0D20 /* ChannalVC.swift in Sources */,
 				843A7391252D252A000C0D20 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
