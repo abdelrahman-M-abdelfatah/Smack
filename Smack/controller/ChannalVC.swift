@@ -23,6 +23,10 @@ class ChannalVC: UIViewController {
     @IBAction func LoginBtnPressed(_ sender: Any) {
         performSegue(withIdentifier: "Login", sender: nil   )
     }
+    @IBAction func PrepereForUnwind(Segue:UIStoryboardSegue)
+    {
+        
+    }
     
     /*
     // MARK: - Navigation
